@@ -1,0 +1,158 @@
+:root {
+  --primary: #061130;
+  --lighten: #1c4bc4;
+  --shader: #eef3f3;
+  --highlight: #ffffff;
+  --main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* * {
+  border: 1px yellow dashed;
+} */
+
+body {
+  background-color: var(--primary);
+  color: var(--highlight);
+  font-family: var(--main-font);
+  margin: 0;
+  min-height: 100vh;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  color: var(--highlight);
+  margin-top: 2em;
+  margin-bottom: 6em;
+}
+
+header div {
+  justify-content: space-around;
+}
+
+header button {
+  margin: 0 1.5em;
+}
+
+.chat-btn {
+  background-color: var(--lighten);
+  border-radius: 10px;
+  padding: 0em .75em;
+  height: 2em;
+}
+
+main {
+  justify-content: space-between;
+}
+
+.left {
+  width: 25%;
+  /* margin-right: 10em; */
+  margin-left: 8em;
+}
+
+h4 {
+  color: yellow;
+  margin-top: 0;
+}
+
+p {
+  line-height: 2em;
+}
+
+.right {
+  width: 50%;
+}
+
+.image-fit {
+  width: 100%;
+}
+
+.footer-links {
+  background-color: var(--highlight);
+  justify-content: space-evenly;
+  padding: 2em 1em;
+}
+
+footer h1 {
+  margin-bottom: 0;
+}
+
+.bottom-blurb {
+  color: var(--primary);
+  align-items: center;
+  background-color: var(--shader);
+  padding-bottom: 1em;
+}
+
+@media screen and (max-width: 700px) {
+  header.header {
+    width: 90%;
+    margin: .2em;
+    display: block;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  header button {
+    font-size: smaller;
+  }
+
+  button.chat-btn {
+    height: 2.5em;
+    border-radius: 75px;
+  }
+
+  main.main {
+    margin-right: .2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .left {
+    margin: .2em;
+    width: 95%;
+  }
+
+  .right {
+    width: 95%;
+    margin: .2em;
+  }
+
+  footer.footer {
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .bottom-blurb {
+    padding: .2em;
+  }
+}
+
+button {
+  border: 0;
+  background: unset;
+  cursor: pointer;
+  color: var(--highlight);
+  font-size: large;
+}
+
+.gutters {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
